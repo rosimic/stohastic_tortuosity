@@ -302,8 +302,8 @@ class Matrica():
                             self.point= self.tocke[-1]  # Nova točka je zadnja odabrana
                             # print('Obrisano | Nova točka: {}'.format(self.point))
                         else:
-                            # self.kopija = self.labeledConnectedPores.copy()     # U malom broju slučaja (kada postoji pomak za samo jedan 
-                            break                                                    # slice prije nego dođe do potrebe za vraćanjem) ako točka 
+                            self.kopija = self.labeledConnectedPores.copy()     # U malom broju slučaja (kada postoji pomak za samo jedan 
+                                                                                # slice prije nego dođe do potrebe za vraćanjem) ako točka 
                                                                                 # skrene u stranu gdje nema puta može doći do zapinjanja 
                                                                                 # točke pa je potrebno očistiti oznake posjećenih ćelija 
                                                                                 # da proba opet naći put
